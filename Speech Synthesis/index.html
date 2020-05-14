@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Speech Engine</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav--item">
+        <i style="font-size: 3em;" class="fas fa-arrow-right"></i>
+        <a href="html/index_2.html" target="blank"><p>Speech To Text</p></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container--child">
+        <h1>Text To Speech</h1>
+        <p class="author">Trang Pham</p>
+      </div>
+      <div class="container--child">
+        <textarea name="text" placeholder="Type something....">
+Hello World</textarea
+        >
+      </div>
+      <div class="container--child">
+        <select name="voice" id="voices">
+          <option value="">Select A Voice</option>
+        </select>
+        <p class="label--text">
+          Range - <span style="color: orange;" id="voice_range">Default</span>
+        </p>
+        <div class="conatainer--child--number"></div>
+        <div class="conatainer--child--number"></div>
+        <input name="rate" type="range" min="0" max="3" value="1" step="0.1" />
+        <p class="label--text">
+          Pitch - <span style="color: orange;" id="voice_pitch">Default</span>
+        </p>
+        <input name="pitch" type="range" min="0" max="2" step="0.1" />
+        <div class="buttons">
+          <button id="stop">Stop!</button>
+          <button id="speak">Speak</button>
+        </div>
+      </div>
+    </div>
+    <div class="container--background"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
